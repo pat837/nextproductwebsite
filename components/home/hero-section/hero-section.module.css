@@ -1,0 +1,227 @@
+.containerland {
+    margin-top: 50px;
+    background-color: #4B0082;
+    max-width: 100%;
+    height: 800px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.containertext {
+    text-align: center;
+    line-height: 4;
+    color: white;
+}
+
+.flexc {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.mscroll {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    height: 50px;
+    margin: auto;
+    background-color: #ECECEC;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.mscrolltitle {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    transform: scale(2);
+    transition: all 1s ease;
+}
+
+.mscrolltitle>div {
+    display: flex;
+    -webkit-animation: scrollText 15s infinite linear;
+    animation: scrollText 15s infinite linear;
+}
+
+.mscrolltitle h1 {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+    transition: all 2s ease;
+}
+
+.mscrolltitle a {
+    text-decoration: none;
+    color: #686868;
+}
+
+.mscrolltitle a:hover {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+
+@-webkit-keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/*div:hover {
+    animation-play-state: paused;
+  }*/
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.rowcontainer {
+
+    align-content: center;
+    margin-left: 140px;
+    line-height: 2;
+    font-size: 35px;
+    margin-top: 55px;
+    color: #4B0082;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.rowcontainer blockquote {
+    --quote-size: 2rem;
+    padding-top: var(--quote-size);
+
+}
+
+.rowcontainer blockquote::before {
+    content: '“';
+    display: block;
+    line-height: var(--quote-size);
+    font-size: 6rem;
+    color: #4B0082;
+}
+
+.amanpic {
+    display: flex;
+    justify-content: left;
+    margin-left: 35px;
+    margin-top: 125px;
+}
+
+.amanpic1 {
+    display: flex;
+    justify-content: center;
+
+    font-size: 35px;
+    margin-top: 55px;
+    color: #4B0082;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.line {
+    border: 1px solid #4B0082;
+    height: 0px;
+    max-width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.amanpic>button {
+    background-color: #4B0082;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.flexb {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 50px;
+}
+
+
+.yellowb {
+    position: relative;
+    box-sizing: border-box;
+    padding: 35px 45px;
+
+    background: rgba(246, 146, 4, 0.05);
+    box-shadow: 0px 10px 15px 4px rgba(246, 146, 4, 0.1);
+    border-radius: 40px;
+}
+
+.yellowb .flexapj {
+    --quote-size: 1.25rem;
+    margin-block: var(--quote-size);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.flexapj blockquote::before,
+.flexapj blockquote::after {
+    display: block;
+}
+
+.flexapj blockquote::before {
+    content: "“";
+    line-height: var(--quote-size);
+    font-size: 6rem;
+    color: #4B0082;
+}
+
+.flexapj blockquote::after {
+    text-align: right;
+    content: '- ' attr(data-author);
+}
+
+.yellowb .text1 {
+    margin-top: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+}

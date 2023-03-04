@@ -1,0 +1,70 @@
+.nav {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.logo {
+    width: 150px;
+    margin: auto;
+    margin-left: 46px;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1560px;
+}
+
+.sign-in-btn {
+    border-radius: 16px;
+    border: 2px solid #4B0082;
+    background-color: #4B0082;
+    margin-inline: auto 46px;
+    background: transparent;
+}
+
+.ul li {
+    float: left;
+}
+
+.ul li a {
+    --width: 0;
+    position: relative;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+
+.ul li a::before {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    display: block;
+    margin-inline: auto;
+    width: var(--width);
+    height: 3.5px;
+    background-color: #4B0082;
+    transition: width .2s ease-in;
+}
+
+.ul li a:hover {
+    --width: 90%;
+    color: grey
+}
